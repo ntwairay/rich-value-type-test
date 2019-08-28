@@ -1,6 +1,6 @@
 variable "compute" {
-  type = object({
+  type = map(object({
     tag_name      = string
     instance_type = string
-  })
+  }))
 }
